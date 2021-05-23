@@ -6,8 +6,27 @@
   fixed;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+  .parallaxFooter{
+    color: white;
+    .socials {
+      text-align: center;
+      a {
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
   .parallaxBody{
+
+    min-height: 88%;
+    @media (max-width: 862px) {
+      min-height: 80%;
+    }
     @media (max-width: 855px) {
       padding-top: 70px;
     }
@@ -21,6 +40,12 @@
       color: white;
       font-family: Batang;
       font-weight: 600;
+      @media (max-width: 888px) {
+        font-size: 140px;
+      }
+      @media (max-width: 448px) {
+        font-size: 90px;
+      }
     }
     a{
       margin-top: 20px;
@@ -35,7 +60,11 @@
       position: relative;
       overflow: hidden;
       box-shadow:  2px 2px 10px white;
-
+      @media (max-width: 448px) {
+        font-size: 20px;
+        padding:10px 20px;
+        margin-top: 30px;
+      }
       &:after{
         position: absolute;
         top: 0;
