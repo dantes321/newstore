@@ -1,14 +1,24 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from './Store.module.scss'
 import Parallax from "../Parallax/Parallax";
 import Boxes from "./Boxes/Boxes";
+import {StoreContext} from "../../contexts/store-context";
+
 const Store = () => {
+
+    const {state, dispatch} = useContext(StoreContext)
+    let boxEl = state.boxes.map((el, index) => <Boxes key={index} id={el.id} price={el.price} title={el.title}
+                                                      description={el.description}
+                                                      img={el.img}
+                                                      dispatch={dispatch}/>)
+
     return (
         <div className={s.store}>
-            <Parallax />
+            <Parallax/>
             <div className={s.title}>Тематические <span>Сюрприз Боксы</span></div>
             <div className={s.boxes}>
-                <Boxes />
+                {boxEl}
+
             </div>
 
         </div>

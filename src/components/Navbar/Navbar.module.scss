@@ -90,11 +90,14 @@
           color: goldenrod;
         }
       }
-      img{
-        width: 250px;
-        height: 50px;
-        background: white;
-      }
+     a{
+       text-decoration: none;
+       img{
+         width: 250px;
+         height: 50px;
+         object-fit: cover;
+       }
+     }
     }
     nav{
       @media (max-width: 800px) {

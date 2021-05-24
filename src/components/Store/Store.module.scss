@@ -1,10 +1,13 @@
 .store {
   overflow: hidden;
   .boxes{
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 10px auto;
-    height: 100px;
-    background: red;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
   }
   .title {
     text-align: center;
