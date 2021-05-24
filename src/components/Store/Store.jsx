@@ -11,12 +11,13 @@ const Store = () => {
                                                       description={el.description}
                                                       img={el.img}
                                                       dispatch={dispatch}
-                                                      counter={el.counter}/>)
+                                                      counter={el.counter}
+                                                      state={state}/>)
 
     return (
         <div className={s.store}>
             <Parallax/>
-            <div  className={s.title}>Тематические <span>Сюрприз Боксы</span></div>
+            <div className={s.title}>Тематические <span>Сюрприз Боксы</span></div>
             <div className={s.boxes}>
                 {boxEl}
 

@@ -34,10 +34,10 @@ const Navbar = () => {
                         </nav> :
                         <nav>
                             <ul className={activeBurger ? `${s.ul} ${s.active}` : s.ul}>
-                                <li><a href="#">Галерея фото</a></li>
-                                <li><a href="#">Конструктор</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Сотрудничество</a></li>
+                                <li><NavLink to="/gallery">Галерея фото</NavLink></li>
+                                <li><NavLink to="#">Конструктор</NavLink></li>
+                                <li><NavLink to="#">Отзывы</NavLink></li>
+                                <li><NavLink to="#">Сотрудничество</NavLink></li>
                             </ul>
                         </nav>
                 }

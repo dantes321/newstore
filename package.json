@@ -1,5 +1,6 @@
 {
   "name": "reactstore",
+  "homepage": "https://dantes321.github.io/store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

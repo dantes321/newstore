@@ -22,6 +22,10 @@ let initialState = {
         {id: 8, price: 250, title: 'Название подарка', description: 'Описание подарка', img: img8,counter:1},
     ],
     cartItems: [],
+    photos:[
+        {photo:img1},{photo:img2},{photo:img3},{photo:img4},{photo:img5},{photo:img6},{photo:img7},{photo:img8},
+    ],
+
 
 }
 let cartElement = localStorage.getItem('item');
