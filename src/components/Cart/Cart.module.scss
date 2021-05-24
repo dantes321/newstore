@@ -68,6 +68,9 @@
     grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
     text-align: center;
     position: relative;
+    @media (max-width: 630px) {
+        display: none;
+    }
 
     &:after {
       content: '';

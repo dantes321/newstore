@@ -2,10 +2,10 @@ import React from 'react';
 import s from'./Boxes.module.scss'
 import {addToCartAC} from "../../../contexts/store-reducer";
 
-const Boxes = ({id, title, description, price, img,dispatch}) => {
+const Boxes = ({id, title, description, price, img,counter,dispatch}) => {
     let addToCart = (e) => {
         e.preventDefault()
-        dispatch(addToCartAC(id, title, description, price, img))
+        dispatch(addToCartAC(id, title, description, price, img,counter))
     }
     return (
         <div className={s.box}>

@@ -10,12 +10,13 @@ const Store = () => {
     let boxEl = state.boxes.map((el, index) => <Boxes key={index} id={el.id} price={el.price} title={el.title}
                                                       description={el.description}
                                                       img={el.img}
-                                                      dispatch={dispatch}/>)
+                                                      dispatch={dispatch}
+                                                      counter={el.counter}/>)
 
     return (
         <div className={s.store}>
             <Parallax/>
-            <div className={s.title}>Тематические <span>Сюрприз Боксы</span></div>
+            <div  className={s.title}>Тематические <span>Сюрприз Боксы</span></div>
             <div className={s.boxes}>
                 {boxEl}
 
